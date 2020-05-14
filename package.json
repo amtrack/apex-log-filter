@@ -1,0 +1,28 @@
+{
+  "name": "apex-log-filter",
+  "version": "0.0.0-development",
+  "description": "CLI for filtering USER_DEBUG output from Salesforce Anonymous Apex execution logs",
+  "main": "",
+  "scripts": {
+    "lint": "shellcheck *.sh",
+    "test": "bats *.bats"
+  },
+  "bin": {
+    "apex-log-filter": "cli.sh"
+  },
+  "files": [
+    "cli.sh"
+  ],
+  "repository": "amtrack/apex-log-filter",
+  "author": "Matthias Rolke <mr.amtrack@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "salesforce",
+    "cli",
+    "apex",
+    "logs"
+  ],
+  "devDependencies": {
+    "bats": "^1.1.0"
+  }
+}
