@@ -2,7 +2,7 @@
 
 > CLI for filtering USER_DEBUG output from Salesforce Anonymous Apex execution logs
 
-[![Build Status](https://travis-ci.com/amtrack/apex-log-filter.svg?branch=master)](https://travis-ci.com/amtrack/apex-log-filter)
+[![Actions Status](https://github.com/amtrack/apex-log-filter/workflows/Test%20and%20Release/badge.svg)](https://github.com/amtrack/apex-log-filter/actions)
 
 Unlike a simple `grep '|USER_DEBUG|'` this supports multi-line messages.
 
