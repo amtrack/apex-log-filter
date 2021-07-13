@@ -2,16 +2,17 @@
   "name": "apex-log-filter",
   "version": "0.0.0-development",
   "description": "CLI for filtering USER_DEBUG output from Salesforce Anonymous Apex execution logs",
-  "main": "",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "lint": "shellcheck *.sh",
     "test": "bats *.bats"
   },
   "bin": {
-    "apex-log-filter": "cli.sh"
+    "apex-log-filter": "cli.js"
   },
   "files": [
-    "cli.sh"
+    "index.js",
+    "cli.js"
   ],
   "repository": "amtrack/apex-log-filter",
   "author": "Matthias Rolke <mr.amtrack@gmail.com>",
