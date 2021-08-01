@@ -6,7 +6,7 @@ setup() {
 
 @test "single-line" {
   cat fixtures/single-line.txt | {
-    run ./cli.sh
+    run ./cli.js
     [ "$status" -eq 0 ]
     [ "${lines[0]}" = "debug-one" ]
   }
@@ -14,7 +14,7 @@ setup() {
 
 @test "single-log" {
   cat fixtures/single-log.txt | {
-    run ./cli.sh
+    run ./cli.js
     [ "$status" -eq 0 ]
     [ "${lines[0]}" = "debug-one" ]
   }
@@ -22,7 +22,7 @@ setup() {
 
 @test "multiple-logs-multiple-lines" {
   cat fixtures/multiple-logs-multiple-lines.txt | {
-    run ./cli.sh
+    run ./cli.js
     [ "$status" -eq 0 ]
     [ "${lines[0]}" = "debug-one" ]
     [ "${lines[1]}" = "debug-two" ]
@@ -33,7 +33,7 @@ setup() {
 
 @test "full" {
   cat fixtures/full.txt | {
-    run ./cli.sh
+    run ./cli.js
     [ "$status" -eq 0 ]
     [ "${lines[0]}" = "debug-one" ]
     [ "${lines[1]}" = "debug-two" ]
