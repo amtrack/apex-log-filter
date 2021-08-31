@@ -4,18 +4,8 @@ Executed successfully.
 48.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
 Execute Anonymous: System.debug('debug-one\ndebug-two');
 Execute Anonymous: System.debug('debug-three\ndebug-four');
-Execute Anonymous: System.debug('debug-five\ndebug-six');
-Execute Anonymous: System.debug('debug-seven\ndebug-eight');
-Execute Anonymous: System.debug('debug-nine\ndebug-ten');
-Execute Anonymous: System.debug('debug-eleven\ndebug-twelve');
-Execute Anonymous: System.debug(LoggingLevel.NONE, 'none-one\nnone-two');
-Execute Anonymous: System.debug(LoggingLevel.ERROR, 'error-one\nerror-two');
-Execute Anonymous: System.debug(LoggingLevel.WARN, 'warn-one\nwarn-two');
 Execute Anonymous: System.debug(LoggingLevel.INFO, 'info-one\ninfo-two');
 Execute Anonymous: System.debug(LoggingLevel.DEBUG, 'debug-one\ndebug-two');
-Execute Anonymous: System.debug(LoggingLevel.FINE, 'fine-one\nfine-two');
-Execute Anonymous: System.debug(LoggingLevel.FINER, 'finer-one\nfiner-two');
-Execute Anonymous: System.debug(LoggingLevel.FINEST, 'finest-one\nfinest-two');
 04:25:21.21 (21632799)|EXECUTION_STARTED
 04:25:21.21 (21650642)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
 04:25:21.21 (22596799)|USER_DEBUG|[1]|DEBUG|debug-one

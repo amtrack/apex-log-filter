@@ -9,6 +9,7 @@ setup() {
     run ./cli.js
     [ "$status" -eq 0 ]
     [ "${lines[0]}" = "debug-one" ]
+    [ "${#lines[@]}" = "1" ]
   }
 }
 
@@ -17,6 +18,18 @@ setup() {
     run ./cli.js
     [ "$status" -eq 0 ]
     [ "${lines[0]}" = "debug-one" ]
+    [ "${#lines[@]}" = "1" ]
+  }
+}
+
+@test "one-digit-milliseconds" {
+  cat fixtures/one-digit-milliseconds.txt | {
+    run ./cli.js
+    [ "$status" -eq 0 ]
+    [ "${lines[0]}" = "debug-one" ]
+    [ "${lines[1]}" = "debug-two" ]
+    [ "${lines[2]}" = "debug-three" ]
+    [ "${#lines[@]}" = "3" ]
   }
 }
 
@@ -28,6 +41,7 @@ setup() {
     [ "${lines[1]}" = "debug-two" ]
     [ "${lines[2]}" = "debug-three" ]
     [ "${lines[3]}" = "debug-four" ]
+    [ "${#lines[@]}" = "4" ]
   }
 }
 
@@ -41,5 +55,8 @@ setup() {
     [ "${lines[3]}" = "debug-four" ]
     [ "${lines[4]}" = "info-one" ]
     [ "${lines[5]}" = "info-two" ]
+    [ "${lines[6]}" = "debug-one" ]
+    [ "${lines[7]}" = "debug-two" ]
+    [ "${#lines[@]}" = "8" ]
   }
 }

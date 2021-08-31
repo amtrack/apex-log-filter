@@ -1,5 +1,5 @@
 const regex =
-  /(.*USER_DEBUG(\|[^\|]*){2}\|)((.|\n)+?)((\n[\d]{2}:[\d]{2}:[\d]{2}\.[\d]{2}|$))/g;
+  /(.*USER_DEBUG(\|[^\|]*){2}\|)((.|\n)+?)((\n[\d]{2}:[\d]{2}:[\d]{2}\.[\d]{1,3}|$))/g;
 
 export function filterApexLogs(input) {
   let output = "";
