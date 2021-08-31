@@ -22,6 +22,17 @@ setup() {
   }
 }
 
+@test "one-digit-milliseconds" {
+  cat fixtures/one-digit-milliseconds.txt | {
+    run ./cli.js
+    [ "$status" -eq 0 ]
+    [ "${lines[0]}" = "debug-one" ]
+    [ "${lines[1]}" = "debug-two" ]
+    [ "${lines[2]}" = "debug-three" ]
+    [ "${#lines[@]}" = "3" ]
+  }
+}
+
 @test "multiple-logs-multiple-lines" {
   cat fixtures/multiple-logs-multiple-lines.txt | {
     run ./cli.js
