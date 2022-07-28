@@ -24,6 +24,6 @@
     "logs"
   ],
   "devDependencies": {
-    "bats": "^1.4.1"
+    "bats": "^1.7.0"
   }
 }
