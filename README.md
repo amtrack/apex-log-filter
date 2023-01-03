@@ -4,7 +4,14 @@
 
 [![Actions Status](https://github.com/amtrack/apex-log-filter/workflows/Test%20and%20Release/badge.svg)](https://github.com/amtrack/apex-log-filter/actions)
 
+When executing Anonymous Apex using `sfdx force:apex:execute` the logs contain a lot of debug information.
+If you want to show only the output coming from `System.debug()` this is the tool to use.
+
 Unlike a simple `grep '|USER_DEBUG|'` this supports multi-line messages.
+
+## Example
+
+Compare the following output from running `System.debug('Hello World\nThis is a debug message.')`:
 
 <table>
 <tr><th>full</th><th>filtered</th></tr>
@@ -60,9 +67,8 @@ $ npm install -g apex-log-filter
 ## Usage
 
 ```console
-$ sfdx force:apex:execute -f hello-word.apex | apex-log-filter
-Hello World!
-This is a debug message.
+$ echo "System.debug(UserInfo.getUserName());" | sfdx force:apex:execute | apex-log-filter
+john.doe@example.com
 ```
 
 ## Sponsors
