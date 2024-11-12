@@ -2,7 +2,7 @@
   "name": "apex-log-filter",
   "version": "0.0.0-development",
   "description": "CLI for filtering USER_DEBUG output from Salesforce Anonymous Apex execution logs",
-  "main": "index.js",
+  "exports": "./index.js",
   "type": "module",
   "scripts": {
     "test": "bats *.bats"
