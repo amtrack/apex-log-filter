@@ -15,7 +15,10 @@
     "index.d.ts",
     "cli.js"
   ],
-  "repository": "amtrack/apex-log-filter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amtrack/apex-log-filter.git"
+  },
   "author": "Matthias Rolke <mr.amtrack@gmail.com>",
   "license": "MIT",
   "keywords": [
